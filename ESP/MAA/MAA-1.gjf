@@ -1,0 +1,27 @@
+%Mem=192GB
+%NProcShared=48
+%Chk=MAA-1.chk
+#n B3LYP/6-311++G(d,p) Opt freq EmpiricalDispersion=GD3BJ IOp(6/33=2)
+
+MAA geo opt
+
+0 1
+H           1.13840        -0.06040         0.39170
+O           2.09540        -0.22650         0.27060
+C           2.68180         0.80230         0.90640
+O           2.01780         1.66180         1.45770
+C           4.16350         0.76340         0.85630
+C           4.82330         0.04460        -0.06700
+H           5.90760         0.02280        -0.09530
+H           4.30530        -0.54200        -0.82010
+C           4.86860         1.57530         1.89910
+H           4.60130         2.63340         1.81040
+H           4.60120         1.22960         2.90320
+H           5.95760         1.50110         1.80380
+
+--Link1--
+%NoSave
+%chk=MAA-1.chk
+#P B3LYP/6-311++G(d,p) Geom=Allcheck SCF=Tight EmpiricalDispersion=GD3BJ Pop=CHELPG SP IOp(6/33=2)
+
+Calculating ESP
